@@ -4,19 +4,42 @@ body {
     margin: 0;
     color: #222222;
 }
-header{
+
+header {
     background-color: #87509c;
+    height: 100vh;
 }
+
 .clearfix:after {
-    content:'';
+    content: '';
     display: table;
     width: 100%;
     clear: both;
 }
+
 .container {
-    width: 1033px;
+    max-width: 1033px;
     margin: 0 auto;
 }
+
+@media ( max-width: 1033px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media ( max-width: 995px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media ( max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
 .menu {
     padding: 0;
     margin: 0;
@@ -27,7 +50,14 @@ header{
     float: left;
     display: block;
     margin-right: 41px;
-    margin-top: 70px;
+    text-align: center;
+    height: 25px;
+
+}
+
+.menu li:hover {
+    background: #643a79;
+    border-radius: 3px;
 }
 
 .menu a {
@@ -36,23 +66,59 @@ header{
     text-transform: uppercase;
     font-size: 14px;
 }
+
 .logo {
-    margin-top: 57px;
+    margin-top: 23px;
     float: left;
-    width: 117px;
+
     height: 37px;
+
 }
+
 nav {
     float: right;
     margin-top: 45px;
 }
-h1{
-    width: 906px;
-    height: 88px;
+
+.titles div {
+
+    height: 44px;
     color: #f7f3ea;
     font-family: "Titillium Web";
     font-size: 42px;
     font-weight: 700;
     line-height: 48.82px;
-    /* Text style for "" */
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    margin-top: 147px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.titles h2 {
+
+    height: 44px;
+    color: #f7f3ea;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.82px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.button {
+    background: #eb7d4b;;
+    color: #484543;
+    border-radius: 3px;
+    display: block;
+
+    padding: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 54px;
+}
